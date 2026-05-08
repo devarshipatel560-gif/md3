@@ -13,6 +13,3 @@ Thumbs.db
 __data__/
 *.py
 __pycache__/
-
-# Backup left from local rebuild — uncomment if you don't want to ship it
-# index.original.html

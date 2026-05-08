@@ -27,7 +27,6 @@ After pushing this repo:
 ## Files
 
 - `index.html` — the app
-- `index.original.html` — backup copy
 - `Development of the Heart.pptx` — source lecture (Dr Revanoor)
 - `Development_of_the_Heart_300_Flashcards.xlsx` — flashcard source
 - `Heart_Development_250_Quiz_Questions.xlsx` — quiz source
