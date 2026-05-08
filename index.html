@@ -739,6 +739,36 @@ label.field {
 .tutor-toggle:hover { background: var(--surface-3); color: var(--text); }
 .tutor-toggle.is-on { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
 
+/* Listen button (per-section TTS) ─────────────────────────────────── */
+.listen-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.32rem 0.7rem 0.32rem 0.55rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-strong);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+.listen-btn:hover { background: var(--surface-3); color: var(--text); }
+.listen-btn.is-playing { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
+.listen-btn .listen-icon {
+  width: 14px; height: 14px;
+  display: inline-block;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><polygon points='11 5 6 9 2 9 2 15 6 15 11 19 11 5'/><path d='M15.54 8.46a5 5 0 0 1 0 7.07'/><path d='M19.07 4.93a10 10 0 0 1 0 14.14'/></svg>") center / contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><polygon points='11 5 6 9 2 9 2 15 6 15 11 19 11 5'/><path d='M15.54 8.46a5 5 0 0 1 0 7.07'/><path d='M19.07 4.93a10 10 0 0 1 0 14.14'/></svg>") center / contain no-repeat;
+}
+.listen-btn.is-playing .listen-icon {
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><rect x='6' y='5' width='4' height='14'/><rect x='14' y='5' width='4' height='14'/></svg>") center / contain no-repeat;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><rect x='6' y='5' width='4' height='14'/><rect x='14' y='5' width='4' height='14'/></svg>") center / contain no-repeat;
+}
+
 .tutor-lede {
   font-size: 1.05em;
   line-height: 1.65;
@@ -1995,6 +2025,12 @@ kbd {
         <input id="searchInput" type="search" placeholder="Search notes, cards, anomalies…" autocomplete="off" aria-label="Search">
         <div id="searchResults" class="hidden" role="listbox"></div>
       </div>
+      <button id="settingsBtn" class="icon-btn" data-action="open-settings" aria-label="Open settings (audio, voice, speed)" title="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+      </button>
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
@@ -2012,7 +2048,7 @@ kbd {
     // Bumped every time the deployed build changes. Pair with version.txt at
     // the site root — when the two disagree, we show the user a "reload"
     // toast so non-technical visitors don't get stuck on a cached page.
-    const APP_VERSION = '2026-05-08-search-icon-fix';
+    const APP_VERSION = '2026-05-08-audio-tts';
 
     const tabIcons = {
       notes:      `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
@@ -6390,7 +6426,12 @@ kbd {
       mistakes: [],             // recent missed questions
       lastMistakeId: 0,
       quizLength: 'all',        // '10' | '25' | '50' | '100' | 'all'
-      tutorMode: {}             // sectionId -> boolean (default: tutor mode ON for all sections)
+      tutorMode: {},            // sectionId -> boolean (default: tutor mode ON for all sections)
+      tts: {                    // text-to-speech preferences
+        voice: '',              // saved voice name; empty string = system default
+        rate:  1.0,             // 0.7 .. 1.6
+        autoReadFlip: false     // auto-speak flashcard content on flip
+      }
     };
 
     // Default behaviour: if a section's tutorMode hasn't been set yet, treat as ON.
@@ -6514,6 +6555,8 @@ kbd {
     }
 
     function switchTab(id, opts = {}) {
+      // Stop any speech when leaving the current tab — don't carry audio between sections.
+      if (id !== activeTab) tts.stop();
       activeTab = id;
       state.lastTab = id;
       saveState();
@@ -6528,6 +6571,148 @@ kbd {
     }
 
     /* ---------- render ---------- */
+    /* ─── Text-to-speech (free, browser-native) ─────────────────────── */
+    const tts = {
+      voices: [],
+      activeId: null,        // identifier for the thing currently speaking, used for UI sync
+      onIdleSubscribers: new Set(),
+      ready() { return typeof window !== 'undefined' && 'speechSynthesis' in window; },
+      _loadVoices() {
+        if (!this.ready()) return;
+        this.voices = (window.speechSynthesis.getVoices() || []).slice();
+      },
+      init() {
+        if (!this.ready()) return;
+        this._loadVoices();
+        window.speechSynthesis.addEventListener?.('voiceschanged', () => {
+          this._loadVoices();
+          // Re-render notes if user is on notes tab — voices may have just become available.
+          if (activeTab === 'notes') renderNav();
+        });
+      },
+      isSpeaking() { return this.ready() && (window.speechSynthesis.speaking || window.speechSynthesis.pending); },
+      speak(text, opts = {}) {
+        if (!this.ready() || !text) return;
+        this.stop();
+        const u = new SpeechSynthesisUtterance(text);
+        u.rate  = Math.max(0.5, Math.min(2, opts.rate ?? state.tts?.rate ?? 1));
+        u.pitch = 1;
+        const vName = state.tts?.voice;
+        if (vName) {
+          const v = this.voices.find(v => v.name === vName);
+          if (v) u.voice = v;
+        }
+        u.onstart = () => { this.activeId = opts.id || 'speaking'; opts.onStart?.(); };
+        u.onend = u.onerror = () => {
+          this.activeId = null;
+          opts.onEnd?.();
+          this.onIdleSubscribers.forEach(fn => { try { fn(); } catch (e) {} });
+        };
+        try { window.speechSynthesis.speak(u); } catch (e) { console.warn('TTS speak failed', e); }
+      },
+      stop() {
+        if (!this.ready()) return;
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+        this.activeId = null;
+      }
+    };
+
+    // Strip Markdown / arrows / quotes / bracket noise so TTS reads cleanly.
+    function spokenify(s) {
+      return String(s || '')
+        .replace(/\*\*/g, '')
+        .replace(/[`_]/g, '')
+        .replace(/→/g, ' becomes ')
+        .replace(/[\[\]]/g, '')
+        .replace(/—/g, ', ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function spokenTextOfSection(section) {
+      const parts = [];
+      if (section.title) parts.push(section.title + '.');
+      const t = section.tutor || {};
+      if (t.plainEnglish) parts.push(spokenify(t.plainEnglish));
+      if (t.analogy) parts.push('Think of it like… ' + spokenify(t.analogy));
+      if (Array.isArray(section.lead)) section.lead.forEach(p => parts.push(spokenify(p)));
+      (t.walkthrough || []).forEach(w => {
+        parts.push(`Step ${w.step}: ${spokenify(w.title)}.`);
+        if (w.body) parts.push(spokenify(w.body));
+      });
+      if ((t.confusions || []).length) {
+        parts.push('Common mix-ups.');
+        t.confusions.forEach(c => {
+          parts.push('Mistake: ' + spokenify(c.mistake));
+          parts.push('Correction: ' + spokenify(c.correction));
+        });
+      }
+      if (t.clinicalHook) parts.push('Clinical hook. ' + spokenify(t.clinicalHook));
+      // Fallback to bullets if no tutor content.
+      if (parts.length <= 1) {
+        section.subsections?.forEach(sub => {
+          parts.push(spokenify(sub.title) + '.');
+          sub.bullets?.forEach(b => parts.push(spokenify(b)));
+        });
+      }
+      return parts.join(' ');
+    }
+
+    function spokenTextOfFlashcard(card, side) {
+      // side = 'front' | 'back'
+      return spokenify(side === 'back' ? card.back : card.front);
+    }
+
+    tts.init();
+
+    function updateListenButton(btn, playing) {
+      if (!btn) return;
+      btn.classList.toggle('is-playing', playing);
+      const label = btn.querySelector('.listen-label');
+      if (label) label.textContent = playing ? 'Stop' : 'Listen';
+      btn.setAttribute('aria-label', playing ? 'Stop reading aloud' : 'Listen to this section');
+    }
+
+    function openSettingsModal() {
+      const v = state.tts.voice || '';
+      const r = state.tts.rate || 1;
+      const ar = !!state.tts.autoReadFlip;
+      const supported = tts.ready();
+      // Sort voices: prefer 'en-' locales, then alphabetical.
+      const voices = (tts.voices || []).slice().sort((a, b) => {
+        const ae = (a.lang || '').toLowerCase().startsWith('en');
+        const be = (b.lang || '').toLowerCase().startsWith('en');
+        if (ae !== be) return ae ? -1 : 1;
+        return (a.name || '').localeCompare(b.name || '');
+      });
+      const voiceOptions = voices.map(v2 => `<option value="${escapeHtml(v2.name)}" ${v === v2.name ? 'selected' : ''}>${escapeHtml(v2.name)} — ${escapeHtml(v2.lang || '')}</option>`).join('');
+      const html = `
+        <h2>Settings</h2>
+        <p class="muted small">Audio playback uses your device's built-in voices — no internet or account needed.</p>
+        ${!supported ? `<p class="muted small" style="margin-top:0.85rem">Your browser does not support text-to-speech. Listen buttons are hidden.</p>` : `
+          <div style="margin-top:1rem; display:grid; gap:0.85rem">
+            <label class="field">Voice
+              <select data-action="settings-voice">
+                <option value="">System default</option>
+                ${voiceOptions}
+              </select>
+            </label>
+            <label class="field">Speed: <span data-rate-display>${r.toFixed(1)}×</span>
+              <input type="range" min="0.7" max="1.6" step="0.05" value="${r}" data-action="settings-rate" style="accent-color: var(--accent)">
+            </label>
+            <label style="display:flex; align-items:center; gap:0.55rem; cursor:pointer">
+              <input type="checkbox" data-action="settings-autoread" ${ar ? 'checked' : ''} style="accent-color: var(--accent)">
+              <span style="font-size:0.92rem">Auto-read flashcards on flip</span>
+            </label>
+            <button class="btn btn-sm btn-ghost" data-action="settings-test" style="justify-self:start">Test voice</button>
+          </div>
+        `}
+        <div class="actions">
+          <button class="btn btn-primary" data-action="modal-close">Done</button>
+        </div>`;
+      openModal(html);
+    }
+
     function render() {
       document.body.dataset.theme = state.theme;
       renderNav();
@@ -6860,6 +7045,13 @@ kbd {
       const hasTutor = !!(t.plainEnglish || t.walkthrough?.length || t.confusions?.length || t.clinicalHook || (section.images && section.images.length));
       const toggleBtn = hasTutor ? `
         <button class="${toggleClass}" data-action="toggle-tutor" data-id="${section.id}" aria-pressed="${tutorOn}" title="Toggle tutor explanations">${toggleLabel}</button>` : '';
+      // Listen button — only show if speechSynthesis is available.
+      const listenId = 'listen-section-' + section.id;
+      const listenBtn = tts.ready() ? `
+        <button class="listen-btn" data-action="listen-section" data-id="${section.id}" data-listen-id="${listenId}" aria-label="Listen to this section" title="Listen aloud">
+          <span class="listen-icon" aria-hidden="true"></span>
+          <span class="listen-label">Listen</span>
+        </button>` : '';
 
       return `
         <article class="note" id="${section.id}">
@@ -6869,6 +7061,7 @@ kbd {
               <h2>${escapeHtml(section.title)}</h2>
             </div>
             <div class="note-head-actions">
+              ${listenBtn}
               ${toggleBtn}
               <label class="read-toggle ${isRead ? 'is-read' : ''}">
                 <input type="checkbox" data-action="toggle-read" data-id="${section.id}" ${isRead ? 'checked' : ''}>
@@ -7330,6 +7523,29 @@ kbd {
         render();
         requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: 'instant', block: 'start' }));
       }
+      if (a === 'listen-section') {
+        const id = el.dataset.id;
+        const listenId = el.dataset.listenId;
+        const sec = notes.find(n => n.id === id);
+        if (!sec) return;
+        // Toggle: if this section is currently being read, stop. Otherwise start.
+        if (tts.activeId === listenId) {
+          tts.stop();
+          updateListenButton(el, false);
+          return;
+        }
+        // Reset any other listen button that thinks it's playing.
+        document.querySelectorAll('.listen-btn.is-playing').forEach(b => updateListenButton(b, false));
+        const text = spokenTextOfSection(sec);
+        if (!text) return;
+        updateListenButton(el, true);
+        tts.speak(text, {
+          id: listenId,
+          onEnd: () => updateListenButton(el, false)
+        });
+      }
+      if (a === 'open-settings') openSettingsModal();
+      if (a === 'tts-stop-all') tts.stop();
       if (a === 'anim-toggle-play') {
         // Toggle paused state on the corresponding .anim-svg.
         const card = el.closest('.anim-card');
@@ -7372,7 +7588,15 @@ kbd {
         state.theme = state.theme === 'dark' ? 'light' : 'dark';
         saveState(); render();
       }
-      if (a === 'flash-flip') { flash.flipped = !flash.flipped; render(); }
+      if (a === 'flash-flip') {
+        flash.flipped = !flash.flipped;
+        render();
+        if (state.tts.autoReadFlip && tts.ready()) {
+          const id = flash.queue[flash.index];
+          const card = flashcards.find(c => c.id === id);
+          if (card) tts.speak(spokenTextOfFlashcard(card, flash.flipped ? 'back' : 'front'));
+        }
+      }
       if (a === 'flash-rate') {
         const id = flash.queue[flash.index];
         if (id) {
@@ -7532,6 +7756,28 @@ kbd {
         quiz.order = []; quiz.index = 0; quiz.answers = {}; quiz.complete = false; quiz.reviewIds = null;
         render();
       }
+      // Settings modal — TTS preferences.
+      if (t.matches('[data-action="settings-voice"]')) {
+        state.tts.voice = t.value || '';
+        saveState();
+      }
+      if (t.matches('[data-action="settings-rate"]')) {
+        state.tts.rate = parseFloat(t.value) || 1;
+        saveState();
+        const disp = document.querySelector('[data-rate-display]');
+        if (disp) disp.textContent = state.tts.rate.toFixed(1) + '×';
+      }
+      if (t.matches('[data-action="settings-autoread"]')) {
+        state.tts.autoReadFlip = !!t.checked;
+        saveState();
+      }
+    });
+
+    // Settings modal — Test voice button (click event, fires from delegate above too).
+    document.addEventListener('click', e => {
+      if (e.target.closest('[data-action="settings-test"]')) {
+        tts.speak("This is the heart embryology study app. Voice test, one two three.", { id: 'test' });
+      }
     });
 
     searchInput.addEventListener('input', e => {
@@ -7628,6 +7874,10 @@ kbd {
     // Initial check + recheck whenever the user returns to the tab.
     checkForUpdate();
     document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        // Stop speech when tab is hidden — don't talk to nobody.
+        tts.stop();
+      }
       if (!document.hidden && !updateToastShown) checkForUpdate();
     });
 
