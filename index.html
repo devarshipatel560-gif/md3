@@ -2048,7 +2048,7 @@ kbd {
     // Bumped every time the deployed build changes. Pair with version.txt at
     // the site root — when the two disagree, we show the user a "reload"
     // toast so non-technical visitors don't get stuck on a cached page.
-    const APP_VERSION = '2026-05-08-audio-tts';
+    const APP_VERSION = '2026-05-08-audio-tts-fixes';
 
     const tabIcons = {
       notes:      `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
@@ -6673,38 +6673,68 @@ kbd {
       btn.setAttribute('aria-label', playing ? 'Stop reading aloud' : 'Listen to this section');
     }
 
+    // Trim noisy voice names down to the bit users actually pick by.
+    // Examples:
+    //   "Microsoft Aarti Indic Online (Natural) - English (India)" → "Aarti Indic"
+    //   "Google US English"                                        → "Google US English"
+    //   "Samantha"                                                 → "Samantha"
+    function prettyVoiceName(v) {
+      let n = String(v.name || '');
+      n = n.replace(/^Microsoft\s+/i, '')
+           .replace(/\s+Multilingual/ig, '')
+           .replace(/\s+Online/ig, '')
+           .replace(/\s+Turbo/ig, '')
+           .replace(/\s*\(Natural\)/ig, '')
+           .replace(/\s*-\s*English[^—-]*$/i, '')
+           .replace(/\s+/g, ' ')
+           .trim();
+      return n || v.name;
+    }
+
     function openSettingsModal() {
       const v = state.tts.voice || '';
       const r = state.tts.rate || 1;
       const ar = !!state.tts.autoReadFlip;
       const supported = tts.ready();
-      // Sort voices: prefer 'en-' locales, then alphabetical.
-      const voices = (tts.voices || []).slice().sort((a, b) => {
+      // Sort voices: English first, then alphabetical.
+      const sorted = (tts.voices || []).slice().sort((a, b) => {
         const ae = (a.lang || '').toLowerCase().startsWith('en');
         const be = (b.lang || '').toLowerCase().startsWith('en');
         if (ae !== be) return ae ? -1 : 1;
         return (a.name || '').localeCompare(b.name || '');
       });
-      const voiceOptions = voices.map(v2 => `<option value="${escapeHtml(v2.name)}" ${v === v2.name ? 'selected' : ''}>${escapeHtml(v2.name)} — ${escapeHtml(v2.lang || '')}</option>`).join('');
+      // Split into "Local" (reliable, downloadable) and "Online" (cloud — often
+      // silently fall back to system default in non-Edge browsers, which is
+      // why "I picked a voice but it sounded the same".
+      const isOnline = (v2) => /\bOnline\b|\(Natural\)/i.test(v2.name) || v2.localService === false;
+      const local = sorted.filter(v2 => !isOnline(v2));
+      const online = sorted.filter(isOnline);
+      const opt = (v2) => `<option value="${escapeHtml(v2.name)}" ${v === v2.name ? 'selected' : ''}>${escapeHtml(prettyVoiceName(v2))} · ${escapeHtml(v2.lang || '')}</option>`;
+      const localOptions = local.map(opt).join('');
+      const onlineOptions = online.map(opt).join('');
       const html = `
         <h2>Settings</h2>
         <p class="muted small">Audio playback uses your device's built-in voices — no internet or account needed.</p>
         ${!supported ? `<p class="muted small" style="margin-top:0.85rem">Your browser does not support text-to-speech. Listen buttons are hidden.</p>` : `
-          <div style="margin-top:1rem; display:grid; gap:0.85rem">
+          <div style="margin-top:1rem; display:grid; gap:0.95rem">
             <label class="field">Voice
-              <select data-action="settings-voice">
+              <select data-action="settings-voice" style="max-width:100%">
                 <option value="">System default</option>
-                ${voiceOptions}
+                ${local.length ? `<optgroup label="Local voices (always work)">${localOptions}</optgroup>` : ''}
+                ${online.length ? `<optgroup label="Online voices (may fall back silently)">${onlineOptions}</optgroup>` : ''}
               </select>
             </label>
             <label class="field">Speed: <span data-rate-display>${r.toFixed(1)}×</span>
-              <input type="range" min="0.7" max="1.6" step="0.05" value="${r}" data-action="settings-rate" style="accent-color: var(--accent)">
+              <input type="range" min="0.7" max="2" step="0.05" value="${r}" data-action="settings-rate" style="accent-color: var(--accent)">
             </label>
             <label style="display:flex; align-items:center; gap:0.55rem; cursor:pointer">
               <input type="checkbox" data-action="settings-autoread" ${ar ? 'checked' : ''} style="accent-color: var(--accent)">
               <span style="font-size:0.92rem">Auto-read flashcards on flip</span>
             </label>
-            <button class="btn btn-sm btn-ghost" data-action="settings-test" style="justify-self:start">Test voice</button>
+            <button class="btn" data-action="settings-test" style="justify-self:start">Test voice</button>
+            <p class="muted tiny" style="margin: 0; line-height: 1.5">
+              Tip: pick a voice from <strong>Local voices</strong> first. The Microsoft "Online (Natural)" voices are cloud-based and may silently fall back to your system default in this browser — picking one of those and hearing no change is the most common reason audio doesn't switch.
+            </p>
           </div>
         `}
         <div class="actions">
