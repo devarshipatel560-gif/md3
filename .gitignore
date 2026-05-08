@@ -1,0 +1,18 @@
+# Local Claude Code preview config
+.claude/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Temporary build artifacts
+__data__/
+*.py
+__pycache__/
+
+# Backup left from local rebuild — uncomment if you don't want to ship it
+# index.original.html
