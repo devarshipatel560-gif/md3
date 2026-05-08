@@ -1,0 +1,740 @@
+[
+  {
+    "file": "image1.png",
+    "slide": 3,
+    "topic": "big-picture",
+    "width": 218,
+    "height": 321,
+    "caption": "Overview of the four major circulations: pulmonary, coronary, systemic, and portal.",
+    "alt": "Anatomical schematic of the pulmonary, coronary, systemic, and portal circulations radiating from the heart and connecting to the lungs, body, and intestinal tract."
+  },
+  {
+    "file": "image2.png",
+    "slide": 4,
+    "topic": "big-picture",
+    "width": 600,
+    "height": 350,
+    "caption": "Lecture diagram (slide 4) illustrating early heart development.",
+    "alt": "Lecture slide 4 diagram from the Development of the Heart presentation, related to early heart development."
+  },
+  {
+    "file": "image3.png",
+    "slide": 4,
+    "topic": "big-picture",
+    "width": 309,
+    "height": 287,
+    "caption": "Lecture diagram (slide 4) illustrating early heart development.",
+    "alt": "Lecture slide 4 diagram from the Development of the Heart presentation, related to early heart development."
+  },
+  {
+    "file": "image4.png",
+    "slide": 4,
+    "topic": "big-picture",
+    "width": 480,
+    "height": 360,
+    "caption": "Lecture diagram (slide 4) illustrating early heart development.",
+    "alt": "Lecture slide 4 diagram from the Development of the Heart presentation, related to early heart development."
+  },
+  {
+    "file": "image5.jpeg",
+    "slide": 4,
+    "topic": "big-picture",
+    "width": 200,
+    "height": 182,
+    "caption": "Lecture diagram (slide 4) illustrating early heart development.",
+    "alt": "Lecture slide 4 diagram from the Development of the Heart presentation, related to early heart development."
+  },
+  {
+    "file": "image6.jpeg",
+    "slide": 4,
+    "topic": "big-picture",
+    "width": 450,
+    "height": 298,
+    "caption": "Lecture diagram (slide 4) illustrating early heart development.",
+    "alt": "Lecture slide 4 diagram from the Development of the Heart presentation, related to early heart development."
+  },
+  {
+    "file": "image8.jpeg",
+    "slide": 6,
+    "topic": "big-picture",
+    "width": 364,
+    "height": 482,
+    "caption": "The heart-forming region (HFR) within splanchnic mesoderm, showing the otic vesicle landmark.",
+    "alt": "Embryonic disc with the heart-forming region marked between the otic vesicles and the third pair of somites in splanchnopleuric lateral plate mesoderm."
+  },
+  {
+    "file": "image9.jpeg",
+    "slide": 6,
+    "topic": "big-picture",
+    "width": 698,
+    "height": 497,
+    "caption": "Horseshoe-shaped intraembryonic coelom enclosing the cardiogenic area.",
+    "alt": "Top-down view of the early embryo showing the U-shaped intraembryonic coelom enlarging cranially to form the pericardial cavity."
+  },
+  {
+    "file": "image10.jpeg",
+    "slide": 7,
+    "topic": "tube-formation-folding",
+    "width": 1152,
+    "height": 864,
+    "caption": "Intraembryonic coelom before cephalic folding.",
+    "alt": "Cross-section of the embryo prior to cephalic folding, showing the intraembryonic coelom flanked by lateral plate mesoderm."
+  },
+  {
+    "file": "image11.jpeg",
+    "slide": 7,
+    "topic": "tube-formation-folding",
+    "width": 1152,
+    "height": 864,
+    "caption": "Pleuroperitoneal canal stage of intraembryonic coelom development.",
+    "alt": "Embryonic cross-section labelling the pleuroperitoneal canal as the coelomic cavity expands cranially."
+  },
+  {
+    "file": "image12.jpeg",
+    "slide": 7,
+    "topic": "tube-formation-folding",
+    "width": 1152,
+    "height": 864,
+    "caption": "Cardiogenic area moving into position after cephalic folding.",
+    "alt": "Sagittal view after cephalic folding: the cardiogenic area sweeps ventrally into the future thoracic region."
+  },
+  {
+    "file": "image13.png",
+    "slide": 7,
+    "topic": "tube-formation-folding",
+    "width": 427,
+    "height": 482,
+    "caption": "Isolated cavities appear in the lateral plate mesoderm that soon fuse to form the horse- (slide 7).",
+    "alt": "Slide 7 diagram: Isolated cavities appear in the lateral plate mesoderm that soon fuse to form the horse-"
+  },
+  {
+    "file": "image14.png",
+    "slide": 8,
+    "topic": "tube-formation-folding",
+    "width": 650,
+    "height": 541,
+    "caption": "Fate of Intraembryonic Coelom (slide 8).",
+    "alt": "Slide 8 diagram: Fate of Intraembryonic Coelom"
+  },
+  {
+    "file": "image15.jpeg",
+    "slide": 8,
+    "topic": "tube-formation-folding",
+    "width": 664,
+    "height": 486,
+    "caption": "Fate of Intraembryonic Coelom (slide 8).",
+    "alt": "Slide 8 diagram: Fate of Intraembryonic Coelom"
+  },
+  {
+    "file": "image16.jpeg",
+    "slide": 9,
+    "topic": "tube-formation-folding",
+    "width": 843,
+    "height": 449,
+    "caption": "Position of the heart tube after cephalic folding.",
+    "alt": "Embryonic side view showing the heart tube relocated ventral to the foregut after cephalic folding."
+  },
+  {
+    "file": "image17.png",
+    "slide": 9,
+    "topic": "tube-formation-folding",
+    "width": 650,
+    "height": 541,
+    "caption": "Fate of Intraembryonic Coelom (slide 9).",
+    "alt": "Slide 9 diagram: Fate of Intraembryonic Coelom"
+  },
+  {
+    "file": "image18.png",
+    "slide": 10,
+    "topic": "molecular-regulation",
+    "width": 1366,
+    "height": 728,
+    "caption": "Molecular cascade activating NKX2.5 in splanchnic mesoderm.",
+    "alt": "Schematic of anterior endoderm secreting BMP 2/4 and WNT inhibitors that activate the NKX2.5 transcription factor in the heart-forming splanchnic mesoderm."
+  },
+  {
+    "file": "image19.jpeg",
+    "slide": 11,
+    "topic": "tube-formation-folding",
+    "width": 615,
+    "height": 600,
+    "caption": "Paired endothelial strands forming the endocardial tubes.",
+    "alt": "Embryonic cross-section showing two angioblastic blood islands coalescing into the paired endocardial heart tubes."
+  },
+  {
+    "file": "image20.png",
+    "slide": 11,
+    "topic": "tube-formation-folding",
+    "width": 448,
+    "height": 450,
+    "caption": "Early formation in the form of paired endothelial strands -angioblastic blood islands t... (slide 11).",
+    "alt": "Slide 11 diagram: Early formation in the form of paired endothelial strands -angioblastic blood islands t..."
+  },
+  {
+    "file": "image7.jpeg",
+    "slide": 11,
+    "topic": "tube-formation-folding",
+    "width": 1060,
+    "height": 913,
+    "caption": "Snapshot of heart development from straight tube to four-chambered organ.",
+    "alt": "Composite figure tracing heart morphogenesis from primitive paired tubes through looping to the mature four-chambered heart."
+  },
+  {
+    "file": "image21.jpeg",
+    "slide": 12,
+    "topic": "tube-formation-folding",
+    "width": 1254,
+    "height": 600,
+    "caption": "Fusion of the two endocardial tubes during lateral folding.",
+    "alt": "Sequential cross-sections showing the two endocardial tubes approaching the midline and fusing into a single tube as lateral folding proceeds."
+  },
+  {
+    "file": "image22.jpeg",
+    "slide": 13,
+    "topic": "tube-formation-folding",
+    "width": 1289,
+    "height": 600,
+    "caption": "VEGF-driven fusion of heart tubes in lateral folding.",
+    "alt": "Diagram of lateral folding bringing the heart-forming regions together under VEGF signaling, fusing them into a single primitive heart tube."
+  },
+  {
+    "file": "image23.png",
+    "slide": 14,
+    "topic": "tube-formation-folding",
+    "width": 800,
+    "height": 576,
+    "caption": "Cephalic folding suspends the heart by the dorsal mesocardium.",
+    "alt": "Sagittal view of the heart tube suspended within the pericardial cavity by the dorsal mesocardium during cephalic folding."
+  },
+  {
+    "file": "image24.png",
+    "slide": 14,
+    "topic": "tube-formation-folding",
+    "width": 1020,
+    "height": 510,
+    "caption": "Dorsal mesocardium degenerating to form the transverse pericardial sinus.",
+    "alt": "Cross-section showing breakdown of the dorsal mesocardium leaving the transverse pericardial sinus around the heart tube."
+  },
+  {
+    "file": "image25.png",
+    "slide": 14,
+    "topic": "tube-formation-folding",
+    "width": 720,
+    "height": 540,
+    "caption": "Final cephalic-folding position of the early heart tube.",
+    "alt": "Lateral view of the embryo with the heart tube settled into the pericardial cavity after cephalic folding completes."
+  },
+  {
+    "file": "image26.gif",
+    "slide": 15,
+    "topic": "tube-formation-folding",
+    "width": 640,
+    "height": 480,
+    "caption": "Lecture diagram (slide 15) illustrating heart tube formation and folding.",
+    "alt": "Lecture slide 15 diagram from the Development of the Heart presentation, related to heart tube formation and folding."
+  },
+  {
+    "file": "image27.png",
+    "slide": 16,
+    "topic": "layers",
+    "width": 650,
+    "height": 541,
+    "caption": "Three layers of the developing heart wall: endocardium, myocardium, epicardium.",
+    "alt": "Cross-section through the heart wall labelling endocardium (innermost), myocardium with cardiac jelly, and epicardium derived from coelomic mesoderm."
+  },
+  {
+    "file": "image28.jpeg",
+    "slide": 17,
+    "topic": "tube-formation-folding",
+    "width": 750,
+    "height": 550,
+    "caption": "Cardinal, vitelline, and umbilical veins draining into the early heart.",
+    "alt": "Schematic of the three paired venous systems — cardinal, vitelline, and umbilical — converging on the venous pole of the developing heart."
+  },
+  {
+    "file": "image29.png",
+    "slide": 18,
+    "topic": "key-events",
+    "width": 668,
+    "height": 600,
+    "caption": "Cardiac neural crest cell migration to the outflow tract.",
+    "alt": "Diagram of neural crest cells from the upper somite region migrating through pharyngeal arches to populate the bulbar and truncal ridges."
+  },
+  {
+    "file": "image30.jpeg",
+    "slide": 19,
+    "topic": "primitive-chambers",
+    "width": 282,
+    "height": 250,
+    "caption": "Formation of Primitive Chambers (slide 19).",
+    "alt": "Slide 19 diagram: Formation of Primitive Chambers"
+  },
+  {
+    "file": "image31.jpeg",
+    "slide": 19,
+    "topic": "primitive-chambers",
+    "width": 723,
+    "height": 446,
+    "caption": "Formation of Primitive Chambers (slide 19).",
+    "alt": "Slide 19 diagram: Formation of Primitive Chambers"
+  },
+  {
+    "file": "image33.jpeg",
+    "slide": 20,
+    "topic": "primitive-chambers",
+    "width": 495,
+    "height": 696,
+    "caption": "Lecture diagram (slide 20) illustrating primitive heart chambers.",
+    "alt": "Lecture slide 20 diagram from the Development of the Heart presentation, related to primitive heart chambers."
+  },
+  {
+    "file": "image34.jpeg",
+    "slide": 20,
+    "topic": "primitive-chambers",
+    "width": 458,
+    "height": 695,
+    "caption": "Lecture diagram (slide 20) illustrating primitive heart chambers.",
+    "alt": "Lecture slide 20 diagram from the Development of the Heart presentation, related to primitive heart chambers."
+  },
+  {
+    "file": "image35.png",
+    "slide": 21,
+    "topic": "looping",
+    "width": 800,
+    "height": 576,
+    "caption": "Bulboventricular looping bends the heart tube to the right.",
+    "alt": "Three-stage diagram of the heart tube growing faster than the pericardial sac, looping rightward into the U-shaped bulboventricular loop."
+  },
+  {
+    "file": "image36.jpeg",
+    "slide": 21,
+    "topic": "looping",
+    "width": 367,
+    "height": 221,
+    "caption": "Final D-loop position of the bulboventricular loop.",
+    "alt": "Lateral diagram of the heart in normal D-loop configuration with atria positioned dorsal to the ventricles."
+  },
+  {
+    "file": "image37.jpeg",
+    "slide": 22,
+    "topic": "looping",
+    "width": 656,
+    "height": 600,
+    "caption": "Mirror-image L-loop producing dextrocardia.",
+    "alt": "Side-by-side comparison of normal D-loop versus abnormal L-loop, with the L-loop placing the cardiac apex on the right side."
+  },
+  {
+    "file": "image38.jpeg",
+    "slide": 22,
+    "topic": "looping",
+    "width": 200,
+    "height": 203,
+    "caption": "Dextrocardia with situs inversus contrasted with normal anatomy.",
+    "alt": "Body schematic comparing situs solitus (heart apex left) with situs inversus totalis (heart apex right) following L-looping."
+  },
+  {
+    "file": "image39.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 600,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image40.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 600,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image41.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 600,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image42.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 600,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image43.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 600,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image44.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 600,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image45.png",
+    "slide": 23,
+    "topic": "looping",
+    "width": 800,
+    "height": 576,
+    "caption": "Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)... (slide 23).",
+    "alt": "Slide 23 diagram: Bulboventricular Dextral looping is the key event to bring together the AV canal (AVC)..."
+  },
+  {
+    "file": "image46.gif",
+    "slide": 24,
+    "topic": "looping",
+    "width": 640,
+    "height": 480,
+    "caption": "Bulbo-ventricular looping (slide 24).",
+    "alt": "Slide 24 diagram: Bulbo-ventricular looping"
+  },
+  {
+    "file": "image48.jpeg",
+    "slide": 27,
+    "topic": "key-events",
+    "width": 337,
+    "height": 250,
+    "caption": "Sinus venosus before incorporation into the right atrium.",
+    "alt": "Cross-section showing the symmetric sinus venosus opening centrally into the dorsal wall of the primitive atrium."
+  },
+  {
+    "file": "image50.jpeg",
+    "slide": 28,
+    "topic": "key-events",
+    "width": 246,
+    "height": 397,
+    "caption": "Hemodynamic shift driving sinoatrial orifice rightward.",
+    "alt": "Schematic of left-to-right venous shunting that progressively enlarges the right horn of the sinus venosus."
+  },
+  {
+    "file": "image52.jpeg",
+    "slide": 29,
+    "topic": "key-events",
+    "width": 293,
+    "height": 253,
+    "caption": "Adult right atrium derivatives of the right venous valve.",
+    "alt": "Labelled diagram showing the cranial right venous valve becoming the crista terminalis and the caudal portion forming the valves of the IVC and coronary sinus."
+  },
+  {
+    "file": "image53.gif",
+    "slide": 30,
+    "topic": "key-events",
+    "width": 640,
+    "height": 480,
+    "caption": "Lecture diagram (slide 30) illustrating septation and outflow tract development.",
+    "alt": "Lecture slide 30 diagram from the Development of the Heart presentation, related to septation and outflow tract development."
+  },
+  {
+    "file": "image49.jpeg",
+    "slide": 31,
+    "topic": "key-events",
+    "width": 600,
+    "height": 879,
+    "caption": "Sinus venosus shifting rightward to incorporate into the right atrium.",
+    "alt": "Diagram tracing rightward enlargement of the right horn and regression of the left horn of the sinus venosus."
+  },
+  {
+    "file": "image51.png",
+    "slide": 32,
+    "topic": "key-events",
+    "width": 800,
+    "height": 576,
+    "caption": "Right and left venous valves at the sinoatrial orifice.",
+    "alt": "Diagram of the right and left venous valves bracketing the sinoatrial opening as the sinus venosus joins the right atrium."
+  },
+  {
+    "file": "image54.jpeg",
+    "slide": 32,
+    "topic": "key-events",
+    "width": 283,
+    "height": 173,
+    "caption": "Right Venous Valve of Sinu-atrial orifice (slide 32).",
+    "alt": "Slide 32 diagram: Right Venous Valve of Sinu-atrial orifice"
+  },
+  {
+    "file": "image55.png",
+    "slide": 32,
+    "topic": "key-events",
+    "width": 440,
+    "height": 324,
+    "caption": "Septum primum and septum secundum overlapping at the foramen ovale.",
+    "alt": "Coronal diagram of the interatrial septa: septum primum as a thin flap valve and septum secundum forming the rigid superior wall."
+  },
+  {
+    "file": "image56.jpeg",
+    "slide": 33,
+    "topic": "key-events",
+    "width": 544,
+    "height": 694,
+    "caption": "Left venous valve fused with the septum secundum.",
+    "alt": "Detail of the left venous valve incorporating into the developing septum secundum on the right side of the interatrial septum."
+  },
+  {
+    "file": "image57.png",
+    "slide": 35,
+    "topic": "key-events",
+    "width": 800,
+    "height": 576,
+    "caption": "Coronary sinus and oblique vein of Marshall derivatives.",
+    "alt": "Diagram showing the regressed left horn of the sinus venosus becoming the coronary sinus and the left common cardinal vein becoming the oblique vein of Marshall."
+  },
+  {
+    "file": "image58.jpeg",
+    "slide": 35,
+    "topic": "key-events",
+    "width": 899,
+    "height": 600,
+    "caption": "Endocardial cushions partitioning the common AV canal.",
+    "alt": "Frontal section of the AV canal with dorsal and ventral endocardial cushions fusing to create the right (tricuspid) and left (mitral) AV openings."
+  },
+  {
+    "file": "image59.png",
+    "slide": 37,
+    "topic": "key-events",
+    "width": 800,
+    "height": 576,
+    "caption": "Septum primum growing toward endocardial cushions, leaving foramen primum.",
+    "alt": "Coronal diagram of the interatrial septum primum descending from the roof of the primordial atrium with the ostium primum below its free edge."
+  },
+  {
+    "file": "image60.png",
+    "slide": 37,
+    "topic": "key-events",
+    "width": 800,
+    "height": 576,
+    "caption": "Programmed cell death creating the foramen secundum.",
+    "alt": "Sequential diagrams showing apoptotic perforations in the upper septum primum coalescing into the foramen secundum before the foramen primum closes."
+  },
+  {
+    "file": "image61.png",
+    "slide": 37,
+    "topic": "key-events",
+    "width": 800,
+    "height": 576,
+    "caption": "Septum secundum growing to the right of septum primum.",
+    "alt": "Coronal diagram of the rigid septum secundum descending to the right of the thin septum primum, partially covering the foramen secundum."
+  },
+  {
+    "file": "image62.jpeg",
+    "slide": 38,
+    "topic": "key-events",
+    "width": 828,
+    "height": 600,
+    "caption": "Septum primum acting as a flap valve over the foramen ovale.",
+    "alt": "Cross-section showing fetal right-to-left shunting through the foramen ovale, with septum primum functioning as a one-way valve."
+  },
+  {
+    "file": "image63.jpeg",
+    "slide": 41,
+    "topic": "key-events",
+    "width": 687,
+    "height": 600,
+    "caption": "Adult fossa ovalis from the fused septa.",
+    "alt": "Postnatal diagram of the closed foramen ovale: septum primum forms the floor of the fossa ovalis and septum secundum forms the limbus."
+  },
+  {
+    "file": "image64.png",
+    "slide": 41,
+    "topic": "key-events",
+    "width": 800,
+    "height": 576,
+    "caption": "Atrial hemodynamics before and after birth.",
+    "alt": "Side-by-side diagram contrasting prenatal right-to-left shunt across the foramen ovale with postnatal closure as left atrial pressure rises."
+  },
+  {
+    "file": "image65.png",
+    "slide": 43,
+    "topic": "key-events",
+    "width": 598,
+    "height": 1125,
+    "caption": "Closure of the foramen ovale at birth.",
+    "alt": "Diagram showing rising left atrial pressure pressing the septum primum flap against the septum secundum to close the foramen ovale."
+  },
+  {
+    "file": "image66.jpeg",
+    "slide": 44,
+    "topic": "key-events",
+    "width": 901,
+    "height": 600,
+    "caption": "Primordial pulmonary vein incorporating into the smooth left atrium.",
+    "alt": "Diagram showing the primordial pulmonary vein expanding into the dorsal wall of the left atrium to form its smooth-walled portion."
+  },
+  {
+    "file": "image67.png",
+    "slide": 45,
+    "topic": "key-events",
+    "width": 463,
+    "height": 311,
+    "caption": "Two parts of the interventricular septum: muscular and membranous.",
+    "alt": "Coronal diagram of the IV septum showing the muscular component growing up from the floor and the membranous component descending from the AV cushions."
+  },
+  {
+    "file": "image68.jpeg",
+    "slide": 46,
+    "topic": "key-events",
+    "width": 357,
+    "height": 264,
+    "caption": "Components fusing to form the complete interventricular septum.",
+    "alt": "Exploded diagram of right and left bulbar ridges, dorsal endocardial cushion, membranous and muscular components combining into the final IV septum."
+  },
+  {
+    "file": "image69.jpeg",
+    "slide": 46,
+    "topic": "key-events",
+    "width": 357,
+    "height": 252,
+    "caption": "Summary roadmap of interventricular septum formation.",
+    "alt": "Schematic listing AV/CV canal alignment, AV partitioning, and IV septation as the sequential events that complete the interventricular septum."
+  },
+  {
+    "file": "image47.gif",
+    "slide": 48,
+    "topic": "looping",
+    "width": 640,
+    "height": 480,
+    "caption": "Bulbo-ventricular looping (slide 48).",
+    "alt": "Slide 48 diagram: Bulbo-ventricular looping"
+  },
+  {
+    "file": "image70.png",
+    "slide": 49,
+    "topic": "key-events",
+    "width": 800,
+    "height": 600,
+    "caption": "Key event 2 (slide 49).",
+    "alt": "Slide 49 diagram: Key event 2"
+  },
+  {
+    "file": "image71.png",
+    "slide": 49,
+    "topic": "key-events",
+    "width": 800,
+    "height": 600,
+    "caption": "AV cushion fusion separating tricuspid and mitral openings.",
+    "alt": "Coronal diagram of dorsal and ventral AV cushions meeting in the midline to split the common AV canal."
+  },
+  {
+    "file": "image72.png",
+    "slide": 49,
+    "topic": "key-events",
+    "width": 800,
+    "height": 600,
+    "caption": "Primordial muscular IV septum growing toward the endocardial cushions.",
+    "alt": "Lateral diagram of the muscular interventricular septum extending from the apex toward the AV cushions."
+  },
+  {
+    "file": "image73.jpeg",
+    "slide": 50,
+    "topic": "key-events",
+    "width": 825,
+    "height": 388,
+    "caption": "Membranous septum closing the persistent IV gap.",
+    "alt": "Coronal diagram of the membranous interventricular septum sealing the gap between the muscular IV septum and the bulbar ridges."
+  },
+  {
+    "file": "image74.png",
+    "slide": 51,
+    "topic": "key-events",
+    "width": 1120,
+    "height": 764,
+    "caption": "Membranous IV septum fusing with the AP septum.",
+    "alt": "Diagram showing the right side of the dorsal endocardial cushion fusing with the bulbar ridges to complete the membranous portion of the IV septum."
+  },
+  {
+    "file": "image75.png",
+    "slide": 52,
+    "topic": "key-events",
+    "width": 461,
+    "height": 564,
+    "caption": "Neural crest cells migrating into the outflow tract.",
+    "alt": "Schematic of cardiac neural crest cells streaming through the pharyngeal arches into the bulbar and truncal ridges of the outflow tract."
+  },
+  {
+    "file": "image76.png",
+    "slide": 53,
+    "topic": "key-events",
+    "width": 811,
+    "height": 567,
+    "caption": "Lecture diagram (slide 53) illustrating septation and outflow tract development.",
+    "alt": "Lecture slide 53 diagram from the Development of the Heart presentation, related to septation and outflow tract development."
+  },
+  {
+    "file": "image77.png",
+    "slide": 54,
+    "topic": "key-events",
+    "width": 1600,
+    "height": 869,
+    "caption": "180° spiraling of the aorticopulmonary septum.",
+    "alt": "Three-stage diagram showing the bulbar and truncal ridges fusing and twisting 180° to align the aorta over the LV and pulmonary trunk over the RV."
+  },
+  {
+    "file": "image78.png",
+    "slide": 55,
+    "topic": "key-events",
+    "width": 729,
+    "height": 525,
+    "caption": "Final positioning of the great vessels after AP septation.",
+    "alt": "End-stage diagram of the heart with the ascending aorta over the left ventricle and the pulmonary trunk over the right ventricle."
+  },
+  {
+    "file": "image79.jpeg",
+    "slide": 56,
+    "topic": "key-events",
+    "width": 704,
+    "height": 704,
+    "caption": "Muscular IV septum forms (slide 56).",
+    "alt": "Slide 56 diagram: Muscular IV septum forms"
+  },
+  {
+    "file": "image80.png",
+    "slide": 56,
+    "topic": "key-events",
+    "width": 1227,
+    "height": 1594,
+    "caption": "Summary of IV septum formation: muscular, AP, and membranous parts.",
+    "alt": "Composite summary diagram of the muscular IV septum forming first, the IV foramen persisting, and the AP septum closing it via the membranous component."
+  },
+  {
+    "file": "image81.png",
+    "slide": 56,
+    "topic": "key-events",
+    "width": 690,
+    "height": 680,
+    "caption": "Muscular IV septum forms (slide 56).",
+    "alt": "Slide 56 diagram: Muscular IV septum forms"
+  },
+  {
+    "file": "image82.png",
+    "slide": 57,
+    "topic": "key-events",
+    "width": 602,
+    "height": 281,
+    "caption": "Semilunar valve cusps forming around the great vessel orifices.",
+    "alt": "Cross-section of three swellings of subendocardial tissue around the aorta and pulmonary trunk that develop into the semilunar valve cusps."
+  },
+  {
+    "file": "image83.jpeg",
+    "slide": 57,
+    "topic": "key-events",
+    "width": 1354,
+    "height": 600,
+    "caption": "Trabeculae carneae and papillary muscles forming via cavitation.",
+    "alt": "Frontal view of the ventricular wall showing cavitation that produces the trabeculae carneae and papillary muscles supporting the AV valve cusps."
+  }
+]

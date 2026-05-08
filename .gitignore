@@ -9,7 +9,9 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Temporary build artifacts
+# Build helpers + intermediate artifacts (kept out of the published app)
+tools/
 __data__/
 *.py
 __pycache__/
+assets/lecture-images/_excluded/
